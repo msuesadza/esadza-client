@@ -1,0 +1,52 @@
+.body {
+  background-color: #0000FF;
+  background-repeat:no-repeat;
+  width: 100%;
+  color: white;
+  font: 14px Helvetica, sans-serif;
+}
+.logo {
+  position: absolute;
+  margin-bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bigbutton {
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  border: none;
+  color: #0000FF;
+  text-align: center;
+  font-size: 15px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.bigbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bigbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.bigbutton:hover span {
+  padding-right: 25px;
+}
+
+.bigbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
